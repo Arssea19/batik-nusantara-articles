@@ -18,7 +18,7 @@ const BATIK_ARTICLES = [
     featured: true,
     views: "14.2k",
     likes: 842,
-    coverImage: "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=1200&auto=format&fit=crop&q=80",
+    coverImage: "img/batik1.jpg",
     coverCaption: "Proses membatik tulis tradisional menggunakan canting tembaga dan malam panas.",
     tags: ["UNESCO", "Hari Batik Nasional", "Keraton Jawa", "Sejarah", "Wastra"],
     content: `
@@ -36,7 +36,7 @@ const BATIK_ARTICLES = [
       <p>Evolusi paling berpengaruh terjadi pada era <strong>Kesultanan Mataram Islam</strong>, yang kemudian terpecah menjadi Kasunanan Surakarta dan Kasultanan Ngayogyakarta Hadiningrat melalui Perjanjian Giyanti (1755). Di dalam dinding benteng keraton inilah, proses membatik diangkat ke derajat spiritual tertinggi: sebuah laku tirakat atau meditasi batin di mana para putri keraton memohon petunjuk Hyang Widhi melalui ketelitian torehan canting.</p>
 
       <div class="info-card">
-        <h4>🏛️ Mengapa UNESCO Mengakui Batik Indonesia?</h4>
+        <h4>Mengapa UNESCO Mengakui Batik Indonesia?</h4>
         <p>UNESCO mengakui Batik Indonesia bukan sekadar karena keindahan visualnya, tetapi karena batik memenuhi kriteria kebudayaan holistik:</p>
         <ul>
           <li><strong>Siklus Hidup Manusia:</strong> Kain batik menemani orang Indonesia sejak lahir (motif <em>Gendongan</em>), pernikahan (motif <em>Sido Mukti</em>, <em>Truntum</em>), hingga kematian (kain kafan motif <em>Slobok</em>).</li>
@@ -66,7 +66,7 @@ const BATIK_ARTICLES = [
     featured: false,
     views: "11.8k",
     likes: 673,
-    coverImage: "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=1200&auto=format&fit=crop&q=80",
+    coverImage: "img/batik2.jpg",
     coverCaption: "Corak awan bergradasi dinamis khas Cirebon yang sarat makna ketenangan.",
     tags: ["Cirebon", "Mega Mendung", "Akulturasi Tionghoa", "Filosofi", "Pesisiran"],
     content: `
@@ -106,7 +106,7 @@ const BATIK_ARTICLES = [
     featured: false,
     views: "18.5k",
     likes: 1240,
-    coverImage: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=1200&auto=format&fit=crop&q=80",
+    coverImage: "img/batik3.jpg",
     coverCaption: "Canting tembaga yang digunakan untuk menorehkan cairan lilin malam pada batik tulis.",
     tags: ["Batik Tulis", "Batik Cap", "Tekstil Printing", "Panduan Belanja", "Kerajinan"],
     content: `
@@ -157,7 +157,7 @@ const BATIK_ARTICLES = [
     featured: false,
     views: "9.4k",
     likes: 512,
-    coverImage: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=1200&auto=format&fit=crop&q=80",
+    coverImage: "img/kawung.jpg",
     coverCaption: "Keagungan pola geometris simetris motif Kawung melambangkan kesucian batin.",
     tags: ["Kawung", "Filosofi Jawa", "Motif Larangan", "Keraton Surakarta", "Yogyakarta"],
     content: `
@@ -188,7 +188,7 @@ const BATIK_ARTICLES = [
     featured: false,
     views: "8.7k",
     likes: 489,
-    coverImage: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=1200&auto=format&fit=crop&q=80",
+    coverImage: "img/batikpkl.jpg",
     coverCaption: "Warna-warni cerah batik pesisir Pekalongan dan Lasem yang kaya nuansa flora dan fauna.",
     tags: ["Pekalongan", "Lasem", "Batik Tiga Negeri", "Akulturasi", "Batik Madura"],
     content: `
@@ -225,7 +225,7 @@ const BATIK_ARTICLES = [
     featured: false,
     views: "12.3k",
     likes: 810,
-    coverImage: "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=1200&auto=format&fit=crop&q=80",
+    coverImage: "img/merawat.jpeg",
     coverCaption: "Kain batik tradisional membutuhkan perawatan khusus dengan pembersih alami seperti lerak.",
     tags: ["Tips Perawatan", "Buah Lerak", "Batik Tulis", "Lifestyle", "Edukasi"],
     content: `
@@ -264,7 +264,7 @@ const BATIK_ARTICLES = [
     featured: false,
     views: "15.1k",
     likes: 935,
-    coverImage: "https://images.unsplash.com/photo-1520006403909-838d6b92c22e?w=1200&auto=format&fit=crop&q=80",
+    coverImage: "img/parangrusak.jpg",
     coverCaption: "Garis diagonal tegas motif Parang yang melambangkan ombak laut dan tekad baja ksatria.",
     tags: ["Parang Rusak", "Keraton Mataram", "Sultan Agung", "Motif Larangan", "Filosofi"],
     content: `
@@ -296,7 +296,7 @@ const BATIK_ARTICLES = [
     featured: false,
     views: "10.6k",
     likes: 720,
-    coverImage: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1200&auto=format&fit=crop&q=80",
+    coverImage: "img/transformasi.jpg",
     coverCaption: "Sentuhan modern batik dalam gaya busana kasual chic generasi urban.",
     tags: ["Gen-Z", "Fashion Kontemporer", "Sustainable Fashion", "Streetstyle", "Kreatif"],
     content: `
@@ -319,7 +319,7 @@ const MOTIF_GALLERY = [
     origin: "Keraton Yogyakarta & Surakarta",
     meaning: "Pantang menyerah, ketabahan mental, dan kewibawaan ksatria layaknya deburan ombak karang.",
     category: "Klasik Geometris",
-    image: "https://images.unsplash.com/photo-1520006403909-838d6b92c22e?w=600&auto=format&fit=crop&q=80",
+    image: "img/parangrusak.jpg",
     usage: "Upacara penobatan dan busana bangsawan keraton."
   },
   {
@@ -327,7 +327,7 @@ const MOTIF_GALLERY = [
     origin: "Cirebon, Jawa Barat",
     meaning: "Ketenangan hati, kesabaran mendinginkan amarah, dan pembawa rahmat hidup bagi sesama.",
     category: "Pesisiran Puitis",
-    image: "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+    image: "img/batik2.jpg",
     usage: "Busana keraton Kasepuhan/Kanoman dan busana pesta elegan."
   },
   {
@@ -335,7 +335,7 @@ const MOTIF_GALLERY = [
     origin: "Jawa Tengah & Yogyakarta",
     meaning: "Kesucian batin, pengendalian diri dari hawa nafsu, dan kemanfaatan hidup tanpa pamrih.",
     category: "Klasik Geometris",
-    image: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=600&auto=format&fit=crop&q=80",
+    image: "img/kawung.jpg",
     usage: "Busana harian, sarung sembahyang, busana wisuda & formal."
   },
   {
@@ -343,7 +343,7 @@ const MOTIF_GALLERY = [
     origin: "Surakarta (Kanjeng Ratu Kencana)",
     meaning: "Cinta kasih yang bersemi kembali (tumaruntum), ketulusan kasih orang tua kepada anak.",
     category: "Bunga & Flora",
-    image: "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=600&auto=format&fit=crop&q=80",
+    image: "img/truntum.jpg",
     usage: "Busana orang tua pengantin pada prosesi pernikahan adat Jawa."
   },
   {
@@ -351,7 +351,7 @@ const MOTIF_GALLERY = [
     origin: "Yogyakarta & Solo",
     meaning: "Keindahan keberagaman bunga-bunga di jagat raya yang bersatu dalam kedamaian dan harmoni.",
     category: "Campuran / Jagad",
-    image: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&auto=format&fit=crop&q=80",
+    image: "img/sekarjagad.jpg",
     usage: "Busana kehormatan, upacara adat, dan pakaian formal kenegaraan."
   },
   {
@@ -359,7 +359,7 @@ const MOTIF_GALLERY = [
     origin: "Surakarta, Jawa Tengah",
     meaning: "Harapan agar pemakainya mencapai kemuliaan, kemakmuran, dan kebahagiaan lahir batin.",
     category: "Upacara Sakral",
-    image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600&auto=format&fit=crop&q=80",
+    image: "img/sidomukti.jpg",
     usage: "Busana sepasang mempelai pada akad dan pesta pernikahan."
   }
 ];

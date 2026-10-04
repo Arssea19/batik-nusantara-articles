@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WastraBatik - Portal Ensiklopedia & Artikel Batik Nusantara</title>
-  <meta name="description" content="Portal artikel edukasi, sejarah, filosofi motif, teknik pembuatan, dan gaya hidup batik Indonesia yang diakui dunia sebagai Warisan Budaya Takbenda UNESCO.">
-  <meta name="keywords" content="batik nusantara, artikel batik, filosofi mega mendung, batik tulis, batik cap, sejarah batik unesco, motif parang, motif kawung">
-  
+  <title>WastraBatik - Artikel Batik Nusantara</title>
+  <meta name="description"
+    content="Portal artikel edukasi, sejarah, filosofi motif, teknik pembuatan, dan gaya hidup batik Indonesia yang diakui dunia sebagai Warisan Budaya UNESCO.">
+  <meta name="keywords"
+    content="batik nusantara, artikel batik, filosofi mega mendung, batik tulis, batik cap, sejarah batik unesco, motif parang, motif kawung">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -43,46 +48,44 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="batik-pattern-bg text-stone-800 antialiased min-h-screen flex flex-col selection:bg-amber-200 selection:text-amber-900">
+
+<body
+  class="batik-pattern-bg text-stone-800 antialiased min-h-screen flex flex-col selection:bg-amber-200 selection:text-amber-900">
 
   <!-- Reading Progress Bar (Fixed on top) -->
   <div class="fixed top-0 left-0 right-0 z-50">
     <div id="reading-progress-bar"></div>
   </div>
 
-  <!-- Top Announcement Bar -->
-  <div class="bg-soga-900 text-amber-200 text-xs sm:text-sm py-2 px-4 border-b border-amber-900/40 text-center tracking-wide flex items-center justify-center gap-2">
-    <span class="inline-block animate-pulse">🇮🇩</span>
-    <span class="font-medium">Warisan Budaya Takbenda Dunia UNESCO • Ensiklopedia & Jurnal Wastra Batik Nusantara</span>
-    <span class="hidden md:inline text-amber-400/60">|</span>
-    <span class="hidden md:inline text-amber-300/80">Lestari Budayaku, Bangga Negeriku</span>
-  </div>
-
   <!-- Main Navigation Bar -->
-  <header class="sticky top-0 z-40 bg-soga-900/95 backdrop-blur-md text-white border-b border-amber-800/40 shadow-md transition-all">
+  <header
+    class="sticky top-0 z-40 bg-soga-900/95 backdrop-blur-md text-white border-b border-amber-800/40 shadow-md transition-all">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
-        
+
         <!-- Brand Logo -->
         <a href="#beranda" onclick="resetToHome()" class="flex items-center gap-3 group">
-          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-500 to-soga-700 flex items-center justify-center shadow-lg shadow-amber-900/30 group-hover:scale-105 transition-transform border border-amber-300/30">
+          <div
+            class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-500 to-soga-700 flex items-center justify-center shadow-lg shadow-amber-900/30 group-hover:scale-105 transition-transform border border-amber-300/30">
             <!-- Canting / Batik Icon SVG -->
             <svg class="w-6 h-6 text-amber-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
             </svg>
           </div>
           <div>
             <div class="flex items-center gap-2">
-              <span class="text-2xl font-bold font-serif-culture tracking-wider text-amber-100 group-hover:text-amber-300 transition-colors">WastraBatik</span>
-              <span class="text-[10px] font-bold uppercase tracking-widest bg-amber-600/40 text-amber-300 px-2 py-0.5 rounded-full border border-amber-500/30">ID</span>
+              <span
+                class="text-2xl font-bold font-serif-culture tracking-wider text-amber-100 group-hover:text-amber-300 transition-colors">WastraBatik</span>
             </div>
-            <p class="text-xs text-amber-200/70 font-light tracking-wide">Portal Ensiklopedia Wastra Indonesia</p>
+            <p class="text-xs text-amber-200/70 font-light tracking-wide">Portal Wastra Indonesia</p>
           </div>
         </a>
 
         <!-- Desktop Navigation Links -->
         <nav class="hidden lg:flex items-center gap-7 text-sm font-medium">
-          <a href="#beranda" onclick="resetToHome()" class="text-amber-200 hover:text-white transition-colors">Beranda</a>
+          <a href="#beranda" onclick="resetToHome()"
+            class="text-amber-200 hover:text-white transition-colors">Beranda</a>
           <a href="#daftar-artikel" class="text-amber-200/80 hover:text-white transition-colors">Daftar Artikel</a>
           <a href="#galeri-motif" class="text-amber-200/80 hover:text-white transition-colors">Kamus Motif</a>
           <a href="#panduan-rawat" class="text-amber-200/80 hover:text-white transition-colors">Panduan Rawat</a>
@@ -91,20 +94,25 @@
 
         <!-- Right Action Buttons -->
         <div class="flex items-center gap-3">
-          
+
           <!-- Bookmark Drawer Trigger Button -->
-          <button id="bookmark-btn" onclick="openBookmarksModal()" class="relative p-2.5 rounded-lg bg-soga-800/80 hover:bg-soga-700 text-amber-200 border border-amber-700/50 hover:text-white transition-all flex items-center gap-2 text-xs sm:text-sm font-medium">
+          <button id="bookmark-btn" onclick="openBookmarksModal()"
+            class="relative p-2.5 rounded-lg bg-soga-800/80 hover:bg-soga-700 text-amber-200 border border-amber-700/50 hover:text-white transition-all flex items-center gap-2 text-xs sm:text-sm font-medium">
             <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
               <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
             </svg>
             <span class="hidden sm:inline">Disimpan</span>
-            <span id="bookmark-count-badge" class="w-5 h-5 rounded-full bg-amber-500 text-soga-900 font-bold text-xs flex items-center justify-center">0</span>
+            <span id="bookmark-count-badge"
+              class="w-5 h-5 rounded-full bg-amber-500 text-soga-900 font-bold text-xs flex items-center justify-center">0</span>
           </button>
 
           <!-- Mobile Menu Hamburger Button -->
-          <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-lg bg-soga-800 text-amber-200 hover:text-white border border-amber-700/50 focus:outline-none" aria-label="Buka Menu Navigasi">
+          <button id="mobile-menu-btn" onclick="toggleMobileMenu()"
+            class="lg:hidden p-2.5 rounded-lg bg-soga-800 text-amber-200 hover:text-white border border-amber-700/50 focus:outline-none"
+            aria-label="Buka Menu Navigasi">
             <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7" />
             </svg>
           </button>
         </div>
@@ -113,11 +121,20 @@
 
       <!-- Mobile Dropdown Menu -->
       <div id="mobile-menu" class="hidden lg:hidden border-t border-amber-800/50 py-4 px-2 space-y-2 text-sm">
-        <a href="#beranda" onclick="toggleMobileMenu(); resetToHome()" class="block py-2 px-3 rounded-md text-amber-200 hover:bg-soga-800 hover:text-white font-medium">Beranda</a>
-        <a href="#daftar-artikel" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-md text-amber-200 hover:bg-soga-800 hover:text-white font-medium">Daftar Artikel</a>
-        <a href="#galeri-motif" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-md text-amber-200 hover:bg-soga-800 hover:text-white font-medium">Kamus Motif & Filosofi</a>
-        <a href="#panduan-rawat" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-md text-amber-200 hover:bg-soga-800 hover:text-white font-medium">Panduan Merawat Batik</a>
-        <a href="#kuis-batik" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-md text-amber-200 hover:bg-soga-800 hover:text-white font-medium">Kuis Pengetahuan Batik</a>
+        <a href="#beranda" onclick="toggleMobileMenu(); resetToHome()"
+          class="block py-2 px-3 rounded-md text-amber-200 hover:bg-soga-800 hover:text-white font-medium">Beranda</a>
+        <a href="#daftar-artikel" onclick="toggleMobileMenu()"
+          class="block py-2 px-3 rounded-md text-amber-200 hover:bg-soga-800 hover:text-white font-medium">Daftar
+          Artikel</a>
+        <a href="#galeri-motif" onclick="toggleMobileMenu()"
+          class="block py-2 px-3 rounded-md text-amber-200 hover:bg-soga-800 hover:text-white font-medium">Kamus Motif &
+          Filosofi</a>
+        <a href="#panduan-rawat" onclick="toggleMobileMenu()"
+          class="block py-2 px-3 rounded-md text-amber-200 hover:bg-soga-800 hover:text-white font-medium">Panduan
+          Merawat Batik</a>
+        <a href="#kuis-batik" onclick="toggleMobileMenu()"
+          class="block py-2 px-3 rounded-md text-amber-200 hover:bg-soga-800 hover:text-white font-medium">Kuis
+          Pengetahuan Batik</a>
       </div>
 
     </div>
@@ -125,23 +142,25 @@
 
   <!-- Main Content Container -->
   <main class="flex-grow">
-    
+
     <!-- Hero / Featured Article Section -->
-    <section id="beranda" class="batik-header-gradient text-white py-12 md:py-20 relative overflow-hidden border-b-4 border-amber-600/40">
-      
+    <section id="beranda"
+      class="batik-header-gradient text-white py-12 md:py-20 relative overflow-hidden border-b-4 border-amber-600/40">
+
       <!-- Subtle Decorative SVG Motif in Hero Background -->
       <div class="absolute -right-20 -bottom-20 opacity-10 pointer-events-none w-96 h-96">
         <svg viewBox="0 0 200 200" fill="currentColor">
-          <circle cx="100" cy="100" r="90" stroke="white" stroke-width="2" fill="none"/>
-          <path d="M100 10 C 60 60, 60 140, 100 190 C 140 140, 140 60, 100 10 Z" fill="white"/>
-          <path d="M10 100 C 60 60, 140 60, 190 100 C 140 140, 60 140, 10 100 Z" fill="white"/>
+          <circle cx="100" cy="100" r="90" stroke="white" stroke-width="2" fill="none" />
+          <path d="M100 10 C 60 60, 60 140, 100 190 C 140 140, 140 60, 100 10 Z" fill="white" />
+          <path d="M10 100 C 60 60, 140 60, 190 100 C 140 140, 60 140, 10 100 Z" fill="white" />
         </svg>
       </div>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         <!-- Featured Article Spotlight Card -->
-        <div id="hero-featured-card" class="bg-soga-950/70 border border-amber-500/30 rounded-2xl p-6 sm:p-8 md:p-10 shadow-2xl backdrop-blur-md">
+        <div id="hero-featured-card"
+          class="bg-soga-950/70 border border-amber-500/30 rounded-2xl p-6 sm:p-8 md:p-10 shadow-2xl backdrop-blur-md">
           <!-- Injected via JavaScript from BATIK_ARTICLES[0] -->
         </div>
 
@@ -157,7 +176,8 @@
           </div>
           <div class="p-3 bg-soga-900/50 rounded-xl border border-amber-500/20">
             <div class="text-amber-400 font-bold text-2xl md:text-3xl font-serif-culture">38+</div>
-            <div class="text-xs text-amber-200/80 mt-1 uppercase tracking-wider font-semibold">Sentra Budaya Daerah</div>
+            <div class="text-xs text-amber-200/80 mt-1 uppercase tracking-wider font-semibold">Sentra Budaya Daerah
+            </div>
           </div>
           <div class="p-3 bg-soga-900/50 rounded-xl border border-amber-500/20">
             <div class="text-amber-400 font-bold text-2xl md:text-3xl font-serif-culture">100%</div>
@@ -170,48 +190,46 @@
 
     <!-- Search & Filter Controls Section -->
     <section id="daftar-artikel" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-      
+
       <!-- Section Title -->
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
         <div>
-          <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-soga-600 bg-amber-100/80 px-3 py-1 rounded-full border border-amber-300">
-            <span>📖</span> Eksplorasi Pengetahuan
+          <div
+            class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-soga-600 bg-amber-100/80 px-3 py-1 rounded-full border border-amber-300">
+            <span></span> Eksplorasi Pengetahuan
           </div>
           <h2 class="text-3xl sm:text-4xl font-bold font-serif-culture text-soga-900 mt-2">Kumpulan Artikel Batik</h2>
-          <p class="text-stone-600 text-sm sm:text-base mt-1">Telusuri sejarah mendalam, filosofi sakral, teknik membatik, hingga tren modern wastra Indonesia.</p>
+          <p class="text-stone-600 text-sm sm:text-base mt-1">Telusuri sejarah mendalam, filosofi sakral, teknik
+            membatik, hingga tren modern wastra Indonesia.</p>
         </div>
 
         <!-- Real-time search counter -->
-        <div id="results-count-text" class="text-xs font-semibold text-stone-500 bg-white/80 py-1.5 px-3.5 rounded-full border border-stone-200 shadow-sm self-start md:self-end">
+        <div id="results-count-text"
+          class="text-xs font-semibold text-stone-500 bg-white/80 py-1.5 px-3.5 rounded-full border border-stone-200 shadow-sm self-start md:self-end">
           Memuat artikel...
         </div>
       </div>
 
       <!-- Controls Card (Search + Filters + Sorting) -->
       <div class="bg-white/95 rounded-2xl p-5 border border-stone-200/80 shadow-md space-y-4 mb-8">
-        
+
         <!-- Top Row: Search Input & Sort Dropdown -->
         <div class="flex flex-col sm:flex-row gap-3">
           <!-- Search Bar -->
           <div class="relative flex-grow">
             <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-stone-400">
               <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
             </div>
-            <input 
-              type="text" 
-              id="search-input" 
-              placeholder="Cari judul artikel, motif (Mega Mendung, Parang, Kawung), teknik, atau penulis..." 
+            <input type="text" id="search-input"
+              placeholder="Cari judul artikel, motif (Mega Mendung, Parang, Kawung), teknik, atau penulis..."
               class="w-full pl-11 pr-10 py-3 bg-stone-50 border border-stone-300 rounded-xl text-stone-900 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:bg-white transition-all shadow-inner"
-              oninput="handleSearch(this.value)"
-            >
-            <button 
-              id="clear-search-btn" 
-              onclick="clearSearch()" 
+              oninput="handleSearch(this.value)">
+            <button id="clear-search-btn" onclick="clearSearch()"
               class="hidden absolute inset-y-0 right-0 pr-3.5 flex items-center text-stone-400 hover:text-stone-700"
-              title="Bersihkan pencarian"
-            >
+              title="Bersihkan pencarian">
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
@@ -220,11 +238,8 @@
 
           <!-- Sort Select -->
           <div class="w-full sm:w-56 shrink-0">
-            <select 
-              id="sort-select" 
-              onchange="handleSort(this.value)" 
-              class="w-full py-3 px-3.5 bg-stone-50 border border-stone-300 rounded-xl text-stone-800 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 font-medium cursor-pointer"
-            >
+            <select id="sort-select" onchange="handleSort(this.value)"
+              class="w-full py-3 px-3.5 bg-stone-50 border border-stone-300 rounded-xl text-stone-800 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 font-medium cursor-pointer">
               <option value="newest">Urutan: Terbaru</option>
               <option value="popular">Urutan: Terpopuler</option>
               <option value="reading-time">Urutan: Waktu Baca Singkat</option>
@@ -235,24 +250,30 @@
         <!-- Bottom Row: Category Pills and Reading Time Filters -->
         <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-stone-100">
           <span class="text-xs font-bold text-stone-500 uppercase tracking-wider mr-1">Kategori:</span>
-          
-          <button onclick="filterByCategory('all')" data-category="all" class="category-pill pill-active px-3 py-1.5 rounded-lg text-xs font-semibold bg-stone-100 text-stone-700 hover:bg-stone-200 transition-all border border-stone-200">
+
+          <button onclick="filterByCategory('all')" data-category="all"
+            class="category-pill pill-active px-3 py-1.5 rounded-lg text-xs font-semibold bg-stone-100 text-stone-700 hover:bg-stone-200 transition-all border border-stone-200">
             Semua (8)
           </button>
-          <button onclick="filterByCategory('sejarah')" data-category="sejarah" class="category-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-stone-100 text-stone-700 hover:bg-stone-200 transition-all border border-stone-200">
-            🏛️ Sejarah & Warisan
+          <button onclick="filterByCategory('sejarah')" data-category="sejarah"
+            class="category-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-stone-100 text-stone-700 hover:bg-stone-200 transition-all border border-stone-200">
+            Sejarah & Warisan
           </button>
-          <button onclick="filterByCategory('filosofi')" data-category="filosofi" class="category-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-stone-100 text-stone-700 hover:bg-stone-200 transition-all border border-stone-200">
-            ✨ Filosofi Motif
+          <button onclick="filterByCategory('filosofi')" data-category="filosofi"
+            class="category-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-stone-100 text-stone-700 hover:bg-stone-200 transition-all border border-stone-200">
+            Filosofi Motif
           </button>
-          <button onclick="filterByCategory('teknik')" data-category="teknik" class="category-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-stone-100 text-stone-700 hover:bg-stone-200 transition-all border border-stone-200">
-            🎨 Teknik & Proses
+          <button onclick="filterByCategory('teknik')" data-category="teknik"
+            class="category-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-stone-100 text-stone-700 hover:bg-stone-200 transition-all border border-stone-200">
+            Teknik & Proses
           </button>
-          <button onclick="filterByCategory('daerah')" data-category="daerah" class="category-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-stone-100 text-stone-700 hover:bg-stone-200 transition-all border border-stone-200">
-            🗺️ Daerah & Corak
+          <button onclick="filterByCategory('daerah')" data-category="daerah"
+            class="category-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-stone-100 text-stone-700 hover:bg-stone-200 transition-all border border-stone-200">
+            Daerah & Corak
           </button>
-          <button onclick="filterByCategory('gaya-hidup')" data-category="gaya-hidup" class="category-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-stone-100 text-stone-700 hover:bg-stone-200 transition-all border border-stone-200">
-            🌿 Gaya Hidup & Rawat
+          <button onclick="filterByCategory('gaya-hidup')" data-category="gaya-hidup"
+            class="category-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-stone-100 text-stone-700 hover:bg-stone-200 transition-all border border-stone-200">
+            Gaya Hidup & Rawat
           </button>
         </div>
 
@@ -265,12 +286,15 @@
 
       <!-- Empty State (Shown when search/filter has 0 results) -->
       <div id="empty-state" class="hidden text-center py-16 bg-white/60 rounded-2xl border border-stone-200 p-8">
-        <div class="w-16 h-16 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+        <div
+          class="w-16 h-16 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
           🔍
         </div>
         <h3 class="text-xl font-bold font-serif-culture text-stone-800">Artikel Tidak Ditemukan</h3>
-        <p class="text-stone-600 text-sm mt-1 max-w-md mx-auto">Kami tidak menemukan artikel yang cocok dengan kata kunci atau filter yang Anda pilih. Silakan coba kata kunci lain.</p>
-        <button onclick="resetFilters()" class="mt-4 px-5 py-2.5 bg-soga-700 hover:bg-soga-800 text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all shadow-md">
+        <p class="text-stone-600 text-sm mt-1 max-w-md mx-auto">Kami tidak menemukan artikel yang cocok dengan kata
+          kunci atau filter yang Anda pilih. Silakan coba kata kunci lain.</p>
+        <button onclick="resetFilters()"
+          class="mt-4 px-5 py-2.5 bg-soga-700 hover:bg-soga-800 text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all shadow-md">
           Reset Filter & Cari Ulang
         </button>
       </div>
@@ -280,13 +304,17 @@
     <!-- Interactive Section: Kamus & Filosofi Motif Nusantara -->
     <section id="galeri-motif" class="py-16 bg-gradient-to-b from-stone-100 to-amber-50/40 border-y border-stone-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="text-center max-w-3xl mx-auto mb-12">
-          <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-soga-700 bg-amber-200/60 px-3.5 py-1 rounded-full border border-amber-300">
-            <span>💎</span> Kamus Visual Interaktif
+          <div
+            class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-soga-700 bg-amber-200/60 px-3.5 py-1 rounded-full border border-amber-300">
+            Kamus Visual Interaktif
           </div>
-          <h2 class="text-3xl sm:text-4xl font-bold font-serif-culture text-soga-900 mt-3">Filosofi Luhur Motif Batik Populer</h2>
-          <p class="text-stone-600 text-sm sm:text-base mt-2">Setiap goresan motif batik bukan sekadar hiasan artistik, melainkan doa, pandangan hidup ksatria, dan petuah leluhur Nusantara. Klik salah satu motif untuk membaca filosofi lengkapnya.</p>
+          <h2 class="text-3xl sm:text-4xl font-bold font-serif-culture text-soga-900 mt-3">Filosofi Luhur Motif Batik
+            Populer</h2>
+          <p class="text-stone-600 text-sm sm:text-base mt-2">Setiap goresan motif batik bukan sekadar hiasan artistik,
+            melainkan doa, pandangan hidup ksatria, dan petuah leluhur Nusantara. Klik salah satu motif untuk membaca
+            filosofi lengkapnya.</p>
         </div>
 
         <div id="motif-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -298,60 +326,86 @@
 
     <!-- Interactive Section: Panduan Merawat Batik Tulis (Cheat-Sheet) -->
     <section id="panduan-rawat" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div class="bg-soga-900 text-white rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden border border-amber-600/30">
-        
+      <div
+        class="bg-soga-900 text-white rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden border border-amber-600/30">
+
         <!-- Decorative Glow -->
-        <div class="absolute -right-20 -top-20 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -right-20 -top-20 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none">
+        </div>
 
         <div class="relative z-10">
           <div class="max-w-2xl mb-8">
-            <span class="text-xs font-bold uppercase tracking-widest text-amber-400 bg-amber-900/60 px-3 py-1 rounded-full border border-amber-700/60">
-              🌿 Konservasi Wastra
+            <span
+              class="text-xs font-bold uppercase tracking-widest text-amber-400 bg-amber-900/60 px-3 py-1 rounded-full border border-amber-700/60">
+              Konservasi Wastra
             </span>
             <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold font-serif-culture mt-3 text-amber-100">
               5 Kaidah Emas Merawat Batik Tulis & Pewarna Alami
             </h2>
             <p class="text-amber-200/80 text-sm sm:text-base mt-2">
-              Batik tulis bernilai tinggi memerlukan perlakuan layaknya karya seni. Ikuti langkah sederhana ini agar warna dan serat kain bertahan hingga lintas generasi.
+              Batik tulis bernilai tinggi memerlukan perlakuan layaknya karya seni. Ikuti langkah sederhana ini agar
+              warna dan serat kain bertahan hingga lintas generasi.
             </p>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
-            <div class="bg-soga-950/60 border border-amber-500/20 rounded-2xl p-5 hover:border-amber-400/40 transition-colors">
-              <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-300 font-bold flex items-center justify-center mb-3 text-lg">1</div>
+
+            <div
+              class="bg-soga-950/60 border border-amber-500/20 rounded-2xl p-5 hover:border-amber-400/40 transition-colors">
+              <div
+                class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-300 font-bold flex items-center justify-center mb-3 text-lg">
+                1</div>
               <h3 class="font-bold text-base text-amber-200 mb-1">Gunakan Buah Lerak</h3>
-              <p class="text-xs text-stone-300 leading-relaxed">Hindari detergen pabrikan ber-pemutih klorin. Gunakan sari buah lerak atau sampo bayi ber-pH seimbang agar zat warna alami tidak luntur.</p>
+              <p class="text-xs text-stone-300 leading-relaxed">Hindari detergen pabrikan ber-pemutih klorin. Gunakan
+                sari buah lerak atau sampo bayi ber-pH seimbang agar zat warna alami tidak luntur.</p>
             </div>
 
-            <div class="bg-soga-950/60 border border-amber-500/20 rounded-2xl p-5 hover:border-amber-400/40 transition-colors">
-              <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-300 font-bold flex items-center justify-center mb-3 text-lg">2</div>
+            <div
+              class="bg-soga-950/60 border border-amber-500/20 rounded-2xl p-5 hover:border-amber-400/40 transition-colors">
+              <div
+                class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-300 font-bold flex items-center justify-center mb-3 text-lg">
+                2</div>
               <h3 class="font-bold text-base text-amber-200 mb-1">Jangan Pernah Memeras Kencang</h3>
-              <p class="text-xs text-stone-300 leading-relaxed">Cukup celup dan angkat perlahan. Tekan pelan dengan telapak tangan atau handuk bersih kering tanpa dipuntir agar benang mori tidak patah.</p>
+              <p class="text-xs text-stone-300 leading-relaxed">Cukup celup dan angkat perlahan. Tekan pelan dengan
+                telapak tangan atau handuk bersih kering tanpa dipuntir agar benang mori tidak patah.</p>
             </div>
 
-            <div class="bg-soga-950/60 border border-amber-500/20 rounded-2xl p-5 hover:border-amber-400/40 transition-colors">
-              <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-300 font-bold flex items-center justify-center mb-3 text-lg">3</div>
+            <div
+              class="bg-soga-950/60 border border-amber-500/20 rounded-2xl p-5 hover:border-amber-400/40 transition-colors">
+              <div
+                class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-300 font-bold flex items-center justify-center mb-3 text-lg">
+                3</div>
               <h3 class="font-bold text-base text-amber-200 mb-1">Jemur Hanya di Angin-Angin</h3>
-              <p class="text-xs text-stone-300 leading-relaxed">Jauhkan dari terik matahari langsung yang memancarkan ultraviolet. Cukup gantung di teras beratap yang memiliki sirkulasi udara baik.</p>
+              <p class="text-xs text-stone-300 leading-relaxed">Jauhkan dari terik matahari langsung yang memancarkan
+                ultraviolet. Cukup gantung di teras beratap yang memiliki sirkulasi udara baik.</p>
             </div>
 
-            <div class="bg-soga-950/60 border border-amber-500/20 rounded-2xl p-5 hover:border-amber-400/40 transition-colors">
-              <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-300 font-bold flex items-center justify-center mb-3 text-lg">4</div>
+            <div
+              class="bg-soga-950/60 border border-amber-500/20 rounded-2xl p-5 hover:border-amber-400/40 transition-colors">
+              <div
+                class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-300 font-bold flex items-center justify-center mb-3 text-lg">
+                4</div>
               <h3 class="font-bold text-base text-amber-200 mb-1">Alas Kain Saat Menyetrika</h3>
-              <p class="text-xs text-stone-300 leading-relaxed">Lapisi batik dengan kain katun tipis di atasnya sebelum disetrika suhu sedang. Hindari semprotan parfum langsung ke permukaan kain.</p>
+              <p class="text-xs text-stone-300 leading-relaxed">Lapisi batik dengan kain katun tipis di atasnya sebelum
+                disetrika suhu sedang. Hindari semprotan parfum langsung ke permukaan kain.</p>
             </div>
 
-            <div class="bg-soga-950/60 border border-amber-500/20 rounded-2xl p-5 hover:border-amber-400/40 transition-colors">
-              <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-300 font-bold flex items-center justify-center mb-3 text-lg">5</div>
+            <div
+              class="bg-soga-950/60 border border-amber-500/20 rounded-2xl p-5 hover:border-amber-400/40 transition-colors">
+              <div
+                class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-300 font-bold flex items-center justify-center mb-3 text-lg">
+                5</div>
               <h3 class="font-bold text-base text-amber-200 mb-1">Cengkeh & Lada Pengganti Kamper</h3>
-              <p class="text-xs text-stone-300 leading-relaxed">Zat kimia kapur barus merusak lilin malam alami. Gantilah dengan kantung kasa berisi lada putih atau cengkeh kering untuk mengusir serangga ngengat.</p>
+              <p class="text-xs text-stone-300 leading-relaxed">Zat kimia kapur barus merusak lilin malam alami.
+                Gantilah dengan kantung kasa berisi lada putih atau cengkeh kering untuk mengusir serangga ngengat.</p>
             </div>
 
-            <div class="bg-gradient-to-br from-amber-600/30 to-soga-800/40 border border-amber-400/30 rounded-2xl p-5 flex flex-col justify-center">
+            <div
+              class="bg-gradient-to-br from-amber-600/30 to-soga-800/40 border border-amber-400/30 rounded-2xl p-5 flex flex-col justify-center">
               <span class="text-xs text-amber-300 font-semibold mb-1">Ingin mempelajari lebih mendalam?</span>
               <h4 class="font-serif-culture font-bold text-amber-100 text-lg mb-2">Baca Artikel Khusus Perawatan</h4>
-              <button onclick="openArticleModal('panduan-merawat-batik-lerak')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-soga-950 font-bold text-xs uppercase tracking-wider rounded-xl transition-all self-start shadow-md">
+              <button onclick="openArticleModal('panduan-merawat-batik-lerak')"
+                class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-soga-950 font-bold text-xs uppercase tracking-wider rounded-xl transition-all self-start shadow-md">
                 Buka Artikel &rarr;
               </button>
             </div>
@@ -366,13 +420,16 @@
     <!-- Interactive Section: Kuis Wawasan Batik -->
     <section id="kuis-batik" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
       <div class="bg-white rounded-3xl p-6 sm:p-10 border border-amber-200 shadow-xl batik-card-shadow">
-        
+
         <div class="text-center mb-8">
-          <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-800 bg-amber-100 px-3 py-1 rounded-full border border-amber-300 mb-2">
-            <span>🎯</span> Uji Pengetahuanmu
+          <div
+            class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-800 bg-amber-100 px-3 py-1 rounded-full border border-amber-300 mb-2">
+            Uji Pengetahuanmu
           </div>
-          <h2 class="text-2xl sm:text-3xl font-bold font-serif-culture text-soga-900">Seberapa Kenal Kamu dengan Batik Indonesia?</h2>
-          <p class="text-stone-600 text-sm mt-1">Jawab 3 pertanyaan kilat seputar batik nusantara untuk mendapatkan predikat wawasan budayamu!</p>
+          <h2 class="text-2xl sm:text-3xl font-bold font-serif-culture text-soga-900">Seberapa Kenal Kamu dengan Batik
+            Indonesia?</h2>
+          <p class="text-stone-600 text-sm mt-1">Jawab 3 pertanyaan kilat seputar batik nusantara untuk mendapatkan
+            predikat wawasan budayamu!</p>
         </div>
 
         <!-- Quiz Container -->
@@ -382,10 +439,12 @@
 
         <!-- Quiz Results Box (Hidden initially) -->
         <div id="quiz-results" class="hidden text-center py-6 border-t border-stone-200 mt-6">
-          <div id="quiz-score-emoji" class="text-5xl mb-2">🏆</div>
+          <div id="quiz-score-emoji" class="text-5xl mb-2"></div>
           <h3 id="quiz-score-title" class="text-2xl font-bold font-serif-culture text-soga-900">Skor Anda: 3/3</h3>
-          <p id="quiz-score-desc" class="text-stone-600 text-sm mt-1 max-w-md mx-auto">Luar biasa! Pengetahuan Anda tentang sejarah dan filosofi batik sungguh mengagumkan.</p>
-          <button onclick="resetQuiz()" class="mt-4 px-6 py-2.5 bg-soga-700 hover:bg-soga-800 text-white font-bold text-xs uppercase tracking-wider rounded-xl transition-all shadow-md">
+          <p id="quiz-score-desc" class="text-stone-600 text-sm mt-1 max-w-md mx-auto">Luar biasa! Pengetahuan Anda
+            tentang sejarah dan filosofi batik sungguh mengagumkan.</p>
+          <button onclick="resetQuiz()"
+            class="mt-4 px-6 py-2.5 bg-soga-700 hover:bg-soga-800 text-white font-bold text-xs uppercase tracking-wider rounded-xl transition-all shadow-md">
             Ulangi Kuis
           </button>
         </div>
@@ -396,26 +455,22 @@
     <!-- Newsletter / Buletin Wastra Subscription -->
     <section id="buletin-wastra" class="bg-amber-100/60 border-t border-amber-200 py-12">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-        <span class="text-2xl">📬</span>
-        <h2 class="text-2xl sm:text-3xl font-bold font-serif-culture text-soga-900 mt-2">Berlangganan Warta Batik Nusantara</h2>
-        <p class="text-stone-600 text-sm max-w-lg mx-auto mt-2">Dapatkan ulasan artikel terbaru, kisah perajin pedalaman, jadwal pameran wastra, dan diskon karya kriya langsung di kotak masuk Anda.</p>
-        
+        <span class="text-2xl"></span>
+        <h2 class="text-2xl sm:text-3xl font-bold font-serif-culture text-soga-900 mt-2">Berlangganan Warta Batik
+          Nusantara</h2>
+        <p class="text-stone-600 text-sm max-w-lg mx-auto mt-2">Dapatkan ulasan artikel terbaru, kisah perajin
+          pedalaman, jadwal pameran wastra, dan diskon karya kriya langsung di kotak masuk Anda.</p>
+
         <form onsubmit="handleNewsletterSubmit(event)" class="mt-6 flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
-          <input 
-            type="email" 
-            id="newsletter-email" 
-            required 
-            placeholder="Masukkan alamat email aktif Anda..." 
-            class="flex-grow px-4 py-3 bg-white border border-amber-300 rounded-xl text-stone-900 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 shadow-sm"
-          >
-          <button 
-            type="submit" 
-            class="px-6 py-3 bg-soga-700 hover:bg-soga-800 text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-md transition-all whitespace-nowrap"
-          >
+          <input type="email" id="newsletter-email" required placeholder="Masukkan alamat email aktif Anda..."
+            class="flex-grow px-4 py-3 bg-white border border-amber-300 rounded-xl text-stone-900 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 shadow-sm">
+          <button type="submit"
+            class="px-6 py-3 bg-soga-700 hover:bg-soga-800 text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-md transition-all whitespace-nowrap">
             Daftar Gratis
           </button>
         </form>
-        <p class="text-[11px] text-stone-500 mt-2">Kami menghargai privasi Anda. Tidak ada spam, berhenti berlangganan kapan saja.</p>
+        <p class="text-[11px] text-stone-500 mt-2">Kami menghargai privasi Anda. Tidak ada spam, berhenti berlangganan
+          kapan saja.</p>
       </div>
     </section>
 
@@ -424,24 +479,28 @@
   <!-- Modern Cultural Footer -->
   <footer class="bg-soga-950 text-stone-300 pt-16 pb-12 border-t border-amber-900/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
+
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-amber-900/40">
-        
+
         <!-- Col 1: About Portal -->
         <div class="space-y-4">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-amber-500 flex items-center justify-center text-soga-950 font-bold shadow-lg">
+            <div
+              class="w-10 h-10 rounded-xl bg-amber-500 flex items-center justify-center text-soga-950 font-bold shadow-lg">
               <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
               </svg>
             </div>
             <span class="text-2xl font-bold font-serif-culture text-amber-100">WastraBatik</span>
           </div>
           <p class="text-xs text-stone-400 leading-relaxed">
-            Portal ensiklopedia digital independen yang didedikasikan untuk mengarsipkan, mendokumentasikan, dan mempopulerkan nilai sejarah serta filosofis seni batik Indonesia untuk generasi masa kini dan masa depan.
+            Portal ensiklopedia digital independen yang didedikasikan untuk mengarsipkan, mendokumentasikan, dan
+            mempopulerkan nilai sejarah serta filosofis seni batik Indonesia untuk generasi masa kini dan masa depan.
           </p>
-          <div class="inline-flex items-center gap-2 text-[11px] text-amber-400/90 bg-amber-950/80 px-3 py-1.5 rounded-lg border border-amber-800/60">
-            <span>🏛️</span> UNESCO Representative List (2009)
+          <div
+            class="inline-flex items-center gap-2 text-[11px] text-amber-400/90 bg-amber-950/80 px-3 py-1.5 rounded-lg border border-amber-800/60">
+            UNESCO Representative List (2009)
           </div>
         </div>
 
@@ -449,11 +508,16 @@
         <div>
           <h4 class="text-sm font-bold text-amber-200 uppercase tracking-widest mb-4">Navigasi Kategori</h4>
           <ul class="space-y-2 text-xs text-stone-400">
-            <li><button onclick="filterByCategory('sejarah')" class="hover:text-amber-300 transition-colors">Sejarah & Warisan Dunia</button></li>
-            <li><button onclick="filterByCategory('filosofi')" class="hover:text-amber-300 transition-colors">Filosofi & Makna Simbolis</button></li>
-            <li><button onclick="filterByCategory('teknik')" class="hover:text-amber-300 transition-colors">Teknik Tulis, Cap & Pewarnaan</button></li>
-            <li><button onclick="filterByCategory('daerah')" class="hover:text-amber-300 transition-colors">Pesisir & Pedalaman Nusantara</button></li>
-            <li><button onclick="filterByCategory('gaya-hidup')" class="hover:text-amber-300 transition-colors">Perawatan & Tren Busana Modern</button></li>
+            <li><button onclick="filterByCategory('sejarah')" class="hover:text-amber-300 transition-colors">Sejarah &
+                Warisan Dunia</button></li>
+            <li><button onclick="filterByCategory('filosofi')" class="hover:text-amber-300 transition-colors">Filosofi &
+                Makna Simbolis</button></li>
+            <li><button onclick="filterByCategory('teknik')" class="hover:text-amber-300 transition-colors">Teknik
+                Tulis, Cap & Pewarnaan</button></li>
+            <li><button onclick="filterByCategory('daerah')" class="hover:text-amber-300 transition-colors">Pesisir &
+                Pedalaman Nusantara</button></li>
+            <li><button onclick="filterByCategory('gaya-hidup')"
+                class="hover:text-amber-300 transition-colors">Perawatan & Tren Busana Modern</button></li>
           </ul>
         </div>
 
@@ -498,44 +562,59 @@
   </footer>
 
   <!-- FULL ARTICLE READER MODAL -->
-  <div id="article-reader-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-stone-900/80 backdrop-blur-sm p-3 sm:p-6 flex justify-center items-start">
-    <div class="relative bg-parchment w-full max-w-4xl rounded-2xl shadow-2xl border border-amber-200/80 my-4 sm:my-8 overflow-hidden fade-in text-stone-900">
-      
+  <div id="article-reader-modal"
+    class="hidden fixed inset-0 z-50 overflow-y-auto bg-stone-900/80 backdrop-blur-sm p-3 sm:p-6 flex justify-center items-start">
+    <div
+      class="relative bg-parchment w-full max-w-4xl rounded-2xl shadow-2xl border border-amber-200/80 my-4 sm:my-8 overflow-hidden fade-in text-stone-900">
+
       <!-- Top Modal Toolbar (Sticky) -->
-      <div class="sticky top-0 z-20 bg-parchment/95 backdrop-blur-md px-6 py-4 border-b border-amber-200 flex items-center justify-between">
-        
+      <div
+        class="sticky top-0 z-20 bg-parchment/95 backdrop-blur-md px-6 py-4 border-b border-amber-200 flex items-center justify-between">
+
         <!-- Breadcrumb / Tag -->
         <div class="flex items-center gap-2 text-xs font-semibold text-soga-700">
-          <span id="modal-category-badge" class="px-2.5 py-1 bg-amber-100 rounded-md border border-amber-300">Kategori</span>
+          <span id="modal-category-badge"
+            class="px-2.5 py-1 bg-amber-100 rounded-md border border-amber-300">Kategori</span>
           <span class="text-stone-300">•</span>
           <span id="modal-reading-time">5 menit baca</span>
         </div>
 
         <!-- Action Controls: Font resize, Bookmark, Share, Close -->
         <div class="flex items-center gap-2">
-          
+
           <!-- Font Size Adjuster -->
           <div class="hidden sm:flex items-center bg-stone-100 rounded-lg p-0.5 border border-stone-300 text-xs">
-            <button onclick="adjustArticleFontSize(-1)" class="px-2 py-1 hover:bg-white rounded font-bold text-stone-700" title="Kecilkan Font">A-</button>
-            <button onclick="adjustArticleFontSize(1)" class="px-2 py-1 hover:bg-white rounded font-bold text-stone-700" title="Besarkan Font">A+</button>
+            <button onclick="adjustArticleFontSize(-1)"
+              class="px-2 py-1 hover:bg-white rounded font-bold text-stone-700" title="Kecilkan Font">A-</button>
+            <button onclick="adjustArticleFontSize(1)" class="px-2 py-1 hover:bg-white rounded font-bold text-stone-700"
+              title="Besarkan Font">A+</button>
           </div>
 
           <!-- Bookmark Toggle inside modal -->
-          <button id="modal-bookmark-btn" onclick="toggleBookmarkCurrentArticle()" class="p-2 rounded-lg bg-stone-100 hover:bg-stone-200 text-stone-700 border border-stone-300 transition-colors" title="Simpan Artikel">
-            <svg id="modal-bookmark-icon" class="w-5 h-5 text-stone-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+          <button id="modal-bookmark-btn" onclick="toggleBookmarkCurrentArticle()"
+            class="p-2 rounded-lg bg-stone-100 hover:bg-stone-200 text-stone-700 border border-stone-300 transition-colors"
+            title="Simpan Artikel">
+            <svg id="modal-bookmark-icon" class="w-5 h-5 text-stone-500" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
             </svg>
           </button>
 
           <!-- Share Button -->
-          <button onclick="shareArticleModal()" class="p-2 rounded-lg bg-stone-100 hover:bg-stone-200 text-stone-700 border border-stone-300 transition-colors" title="Salin Tautan">
+          <button onclick="shareArticleModal()"
+            class="p-2 rounded-lg bg-stone-100 hover:bg-stone-200 text-stone-700 border border-stone-300 transition-colors"
+            title="Salin Tautan">
             <svg class="w-5 h-5 text-stone-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
             </svg>
           </button>
 
           <!-- Close Modal Button -->
-          <button onclick="closeArticleModal()" class="p-2 rounded-lg bg-stone-200 hover:bg-rose-100 hover:text-rose-700 text-stone-800 transition-colors ml-2" title="Tutup">
+          <button onclick="closeArticleModal()"
+            class="p-2 rounded-lg bg-stone-200 hover:bg-rose-100 hover:text-rose-700 text-stone-800 transition-colors ml-2"
+            title="Tutup">
             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
@@ -553,12 +632,14 @@
   </div>
 
   <!-- SAVED BOOKMARKS MODAL -->
-  <div id="bookmarks-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-stone-900/80 backdrop-blur-sm p-4 flex justify-center items-center">
-    <div class="bg-white w-full max-w-lg rounded-2xl shadow-2xl border border-stone-200 p-6 fade-in text-stone-900 relative">
-      
+  <div id="bookmarks-modal"
+    class="hidden fixed inset-0 z-50 overflow-y-auto bg-stone-900/80 backdrop-blur-sm p-4 flex justify-center items-center">
+    <div
+      class="bg-white w-full max-w-lg rounded-2xl shadow-2xl border border-stone-200 p-6 fade-in text-stone-900 relative">
+
       <div class="flex items-center justify-between pb-4 border-b border-stone-200">
         <div class="flex items-center gap-2">
-          <span class="text-xl">🔖</span>
+          <span class="text-xl"></span>
           <h3 class="text-xl font-bold font-serif-culture text-soga-900">Artikel Tersimpan</h3>
         </div>
         <button onclick="closeBookmarksModal()" class="p-1.5 rounded-lg hover:bg-stone-100 text-stone-500">
@@ -582,10 +663,13 @@
   </div>
 
   <!-- MOTIF DETAIL MODAL -->
-  <div id="motif-detail-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-stone-900/80 backdrop-blur-sm p-4 flex justify-center items-center">
-    <div class="bg-parchment w-full max-w-2xl rounded-2xl shadow-2xl border border-amber-200 p-6 sm:p-8 fade-in text-stone-900 relative">
-      
-      <button onclick="closeMotifModal()" class="absolute top-4 right-4 p-2 rounded-lg bg-stone-100 hover:bg-rose-100 hover:text-rose-700 text-stone-600 transition-colors">
+  <div id="motif-detail-modal"
+    class="hidden fixed inset-0 z-50 overflow-y-auto bg-stone-900/80 backdrop-blur-sm p-4 flex justify-center items-center">
+    <div
+      class="bg-parchment w-full max-w-2xl rounded-2xl shadow-2xl border border-amber-200 p-6 sm:p-8 fade-in text-stone-900 relative">
+
+      <button onclick="closeMotifModal()"
+        class="absolute top-4 right-4 p-2 rounded-lg bg-stone-100 hover:bg-rose-100 hover:text-rose-700 text-stone-600 transition-colors">
         <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
@@ -599,7 +683,8 @@
   </div>
 
   <!-- Toast Notification Floating Box -->
-  <div id="toast-notification" class="fixed bottom-6 right-6 z-50 bg-soga-900 text-amber-100 px-5 py-3.5 rounded-xl shadow-2xl border border-amber-600/40 flex items-center gap-3 text-sm font-medium">
+  <div id="toast-notification"
+    class="fixed bottom-6 right-6 z-50 bg-soga-900 text-amber-100 px-5 py-3.5 rounded-xl shadow-2xl border border-amber-600/40 flex items-center gap-3 text-sm font-medium">
     <span id="toast-icon">✨</span>
     <span id="toast-message">Pesan notifikasi</span>
   </div>
@@ -608,4 +693,5 @@
   <script src="data.js"></script>
   <script src="app.js"></script>
 </body>
+
 </html>

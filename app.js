@@ -68,7 +68,7 @@ function renderHeroFeatured() {
       <div class="lg:col-span-7 space-y-4">
         <div class="flex flex-wrap items-center gap-2">
           <span class="px-3 py-1 bg-amber-500 text-soga-950 font-bold text-xs uppercase tracking-wider rounded-full shadow-md">
-            ⭐ Artikel Utama Pilihan Redaksi
+            Artikel Utama Pilihan Redaksi
           </span>
           <span class="text-xs text-amber-200/90 font-medium">
             ${featured.category} • ${featured.readingTime}
@@ -115,7 +115,7 @@ function renderHeroFeatured() {
           <img src="${featured.coverImage}" alt="${featured.title}" class="w-full h-64 sm:h-80 object-cover group-hover:scale-105 transition-transform duration-700">
           <div class="absolute inset-0 bg-gradient-to-t from-soga-950/80 via-transparent to-transparent"></div>
           <div class="absolute bottom-3 left-3 right-3 text-[11px] text-amber-200/90 bg-soga-900/90 backdrop-blur-sm p-2.5 rounded-lg border border-amber-600/30">
-            📷 ${featured.coverCaption}
+             ${featured.coverCaption}
           </div>
         </div>
       </div>
@@ -135,10 +135,10 @@ function renderArticles() {
   let filtered = BATIK_ARTICLES.filter(article => {
     // Category match
     const categoryMatch = currentCategory === 'all' || article.categorySlug === currentCategory;
-    
+
     // Search match
     const query = searchQuery.toLowerCase().trim();
-    const searchMatch = !query || 
+    const searchMatch = !query ||
       article.title.toLowerCase().includes(query) ||
       article.excerpt.toLowerCase().includes(query) ||
       article.author.name.toLowerCase().includes(query) ||
@@ -199,9 +199,9 @@ function renderArticles() {
           <div>
             <!-- Meta reading time and date -->
             <div class="flex items-center gap-2 text-xs text-stone-500 mb-2">
-              <span>⏱️ ${article.readingTime}</span>
+              <span>${article.readingTime}</span>
               <span>•</span>
-              <span>👁️ ${article.views} pembaca</span>
+              <span>${article.views} pembaca</span>
             </div>
 
             <!-- Title -->
@@ -355,7 +355,6 @@ function showQuizResults() {
   const resultsDiv = document.getElementById('quiz-results');
   const title = document.getElementById('quiz-score-title');
   const desc = document.getElementById('quiz-score-desc');
-  const emoji = document.getElementById('quiz-score-emoji');
 
   let score = 0;
   BATIK_QUIZ.forEach((q, idx) => {
@@ -365,13 +364,10 @@ function showQuizResults() {
   title.textContent = `Skor Anda: ${score} dari ${BATIK_QUIZ.length}`;
 
   if (score === 3) {
-    emoji.textContent = '👑';
     desc.textContent = 'Luar Biasa! Anda adalah Ahli Wastra Sejati dengan pemahaman mendalam tentang filosofi dan sejarah batik Indonesia.';
   } else if (score === 2) {
-    emoji.textContent = '✨';
     desc.textContent = 'Bagus sekali! Wawasan budaya batik Anda sudah cukup tinggi. Terus gali artikel-artikel lainnya di portal ini!';
   } else {
-    emoji.textContent = '🌱';
     desc.textContent = 'Awal yang baik! Luangkan waktu sejenak membaca artikel-artikel kami untuk lebih mengenal mahakarya bangsa ini.';
   }
 
